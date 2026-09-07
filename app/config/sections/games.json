@@ -1,0 +1,96 @@
+{
+  "planTypes": [
+    {
+      "id": "intel",
+      "name": "Intel",
+      "image": "/cpu/intel.png"
+    }
+  ],
+  "locations": [
+    {
+      "id": "india",
+      "name": "India",
+      "flag": "/flags/india.png",
+      "setupFee": 0,
+      "availablePlanTypes": [
+        "intel"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "description": "Build, explore, and survive in the ultimate sandbox game",
+      "icon": "/icons/minecraft-icon.webp",
+      "banner": "/banners/minecraft-banners.webp",
+      "featured": true,
+      "startingAt": "$2.40/mo",
+      "primaryColor": "#55FF44",
+      "plans": {
+        "intel": [
+          {
+            "id": "minecraft-starter",
+            "name": "Starter",
+            "type": "intel",
+            "ram": "1 GB",
+            "cpu": "100%",
+            "storage": "10 GB SSD",
+            "price": "1.40",
+            "orderLink": "https://discord.gg/7wJZ7CzWjn",
+            "stock": 10,
+            "tierColor": "#22c55e"
+          },
+          {
+            "id": "minecraft-basic",
+            "name": "Basic",
+            "type": "intel",
+            "ram": "2 GB",
+            "cpu": "150%",
+            "storage": "15 GB SSD",
+            "price": "2.40",
+            "orderLink": "https://discord.gg/7wJZ7CzWjn",
+            "stock": 8,
+            "tierColor": "#3b82f6"
+          },
+          {
+            "id": "minecraft-advanced",
+            "name": "Advanced",
+            "type": "intel",
+            "ram": "4 GB",
+            "cpu": "200%",
+            "storage": "25 GB SSD",
+            "price": "4.40",
+            "orderLink": "https://discord.gg/7wJZ7CzWjn",
+            "stock": 5,
+            "tierColor": "#a855f7"
+          },
+          {
+            "id": "minecraft-pro",
+            "name": "Pro",
+            "type": "intel",
+            "ram": "6 GB",
+            "cpu": "250%",
+            "storage": "35 GB SSD",
+            "price": "6.40",
+            "orderLink": "https://discord.gg/7wJZ7CzWjn",
+            "stock": 3,
+            "tierColor": "#f97316"
+          },
+          {
+            "id": "minecraft-extreme",
+            "name": "Extreme",
+            "type": "intel",
+            "ram": "8 GB",
+            "cpu": "300%",
+            "storage": "50 GB SSD",
+            "price": "8.40",
+            "orderLink": "https://discord.gg/7wJZ7CzWjn",
+            "stock": 2,
+            "tierColor": "#ef4444"
+          }
+        ]
+      }
+    }
+  ]
+}

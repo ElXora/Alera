@@ -1,0 +1,76 @@
+{
+  "planTypes": [
+    {
+      "id": "intel",
+      "name": "Intel",
+      "displayName": "Intel Xeon",
+      "image": "/cpu/intel.png"
+    }
+  ],
+  "locations": [
+    {
+      "id": "india",
+      "name": "India",
+      "flag": "/flags/india.png",
+      "displayName": "India",
+      "availableCpus": [
+        "intel"
+      ]
+    }
+  ],
+  "plans": {
+    "intel": [
+      {
+        "id": "vps-starter",
+        "name": "VPS Starter",
+        "badge": "",
+        "image": "/cpu/intel.png",
+        "cpu": "2x vCPU Core",
+        "cpuDetail": "Intel Xeon",
+        "ram": "1 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "20 GB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "500 GB",
+        "bandwidthDetail": "Bandwidth",
+        "price": "9.99",
+        "period": "/mo",
+        "orderLink": "https://discord.gg/7wJZ7CzWjn"
+      },
+      {
+        "id": "vps-developer",
+        "name": "VPS Developer",
+        "badge": "Popular",
+        "image": "/cpu/intel.png",
+        "cpu": "2x vCPU Core",
+        "cpuDetail": "Intel Xeon",
+        "ram": "3 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "30 GB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "1 TB",
+        "bandwidthDetail": "Bandwidth",
+        "price": "19.99",
+        "period": "/mo",
+        "orderLink": "https://discord.gg/7wJZ7CzWjn"
+      },
+      {
+        "id": "vps-premium",
+        "name": "VPS Premium",
+        "badge": "",
+        "image": "/cpu/intel.png",
+        "cpu": "2x vCPU Core",
+        "cpuDetail": "Intel Xeon",
+        "ram": "6 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "80 GB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "2 TB",
+        "bandwidthDetail": "Bandwidth",
+        "price": "34.99",
+        "period": "/mo",
+        "orderLink": "https://discord.gg/7wJZ7CzWjn"
+      }
+    ]
+  }
+}

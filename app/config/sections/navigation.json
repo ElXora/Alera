@@ -1,0 +1,62 @@
+{
+  "mainNavigation": [
+    {
+      "name": "Games",
+      "href": "/games",
+      "icon": "Gamepad2",
+      "hasDropdown": true,
+      "dropdownType": "games"
+    },
+    {
+      "name": "VPS",
+      "href": "/vps",
+      "icon": "Cloud",
+      "hasDropdown": false
+    },
+    {
+      "name": "Discord Bot",
+      "href": "/discord",
+      "icon": "FaDiscord",
+      "hasDropdown": false
+    },
+    {
+      "name": "Legal",
+      "href": "/terms-of-services",
+      "icon": "FileText",
+      "hasDropdown": true,
+      "dropdownType": "legal",
+      "dropdownItems": [
+        {
+          "name": "Terms of Service",
+          "href": "/terms-of-services",
+          "description": "Our service agreement and terms"
+        },
+        {
+          "name": "Privacy Policy",
+          "href": "/privacy-policy",
+          "description": "How we protect your privacy"
+        }
+      ]
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "Discord",
+      "href": "https://discord.gg/7wJZ7CzWjn",
+      "icon": "discord"
+    }
+  ],
+  "clientSpace": {
+    "name": "CLIENT SPACE",
+    "href": "https://discord.gg/7wJZ7CzWjn",
+    "icon": "User"
+  },
+  "banner": {
+    "show": true,
+    "text": "Join our Discord for support & updates",
+    "couponCode": "",
+    "useThemeColor": true,
+    "backgroundColor": "bg-green-500",
+    "fallbackColor": "bg-green-500"
+  }
+}

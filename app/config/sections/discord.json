@@ -1,0 +1,65 @@
+{
+  "planTypes": [
+    {
+      "id": "standard",
+      "name": "Standard",
+      "displayName": "Discord Bot Hosting",
+      "image": "/icons/nodejs.png"
+    }
+  ],
+  "plans": {
+    "standard": [
+      {
+        "id": "discord-256mb",
+        "name": "256MB",
+        "badge": "",
+        "cpu": "Shared vCPU",
+        "cpuDetail": "Reduced (CPU shortage)",
+        "ram": "256 MB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "5 GB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unmetered",
+        "bandwidthDetail": "Bandwidth",
+        "uptime": "24/7 Uptime",
+        "price": "1.40",
+        "period": "/mo",
+        "orderLink": "https://discord.gg/7wJZ7CzWjn"
+      },
+      {
+        "id": "discord-512mb",
+        "name": "512MB",
+        "badge": "Popular",
+        "cpu": "Shared vCPU",
+        "cpuDetail": "Reduced (CPU shortage)",
+        "ram": "512 MB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "5 GB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unmetered",
+        "bandwidthDetail": "Bandwidth",
+        "uptime": "24/7 Uptime",
+        "price": "2.35",
+        "period": "/mo",
+        "orderLink": "https://discord.gg/7wJZ7CzWjn"
+      },
+      {
+        "id": "discord-1gb",
+        "name": "1GB",
+        "badge": "",
+        "cpu": "Shared vCPU",
+        "cpuDetail": "Reduced (CPU shortage)",
+        "ram": "1 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "5 GB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unmetered",
+        "bandwidthDetail": "Bandwidth",
+        "uptime": "24/7 Uptime",
+        "price": "3.30",
+        "period": "/mo",
+        "orderLink": "https://discord.gg/7wJZ7CzWjn"
+      }
+    ]
+  }
+}

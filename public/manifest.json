@@ -1,0 +1,99 @@
+{
+  "name": "Alera Hosting - Minecraft, Discord Bot & VPS Hosting",
+  "short_name": "Alera",
+  "description": "Premium Minecraft server, Discord bot, and VPS hosting by Alera.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141627",
+  "theme_color": "#55FF44",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "games",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/meta/alera-logo.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/meta/alera-logo.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/meta/alera-logo.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/meta/alera-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/meta/alera-logo.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/meta/alera-banner.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Alera Hosting"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Minecraft Hosting",
+      "short_name": "Minecraft",
+      "description": "Browse Minecraft server plans",
+      "url": "/games",
+      "icons": [
+        {
+          "src": "/meta/alera-logo.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "VPS Hosting",
+      "short_name": "VPS",
+      "description": "Virtual private servers",
+      "url": "/vps",
+      "icons": [
+        {
+          "src": "/meta/alera-logo.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Discord Bot Hosting",
+      "short_name": "Discord Bot",
+      "description": "Host your Discord bot",
+      "url": "/discord",
+      "icons": [
+        {
+          "src": "/meta/alera-logo.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

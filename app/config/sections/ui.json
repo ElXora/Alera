@@ -1,0 +1,33 @@
+{
+  "loading": {
+    "enableLoadingScreen": false,
+    "loadingDuration": 1000
+  },
+  "currency": {
+    "apiKey": "e912bbb7db10a10466ec18f0",
+    "baseCurrency": "USD",
+    "defaultCurrency": "USD",
+    "supportedCurrencies": [
+      {
+        "code": "USD",
+        "symbol": "$",
+        "name": "US Dollar"
+      }
+    ]
+  },
+  "themeSwitcher": {
+    "show": false,
+    "position": "bottom-left",
+    "defaultColor": "alera",
+    "availableColors": [
+      {
+        "name": "alera",
+        "value": "rgba(85, 255, 68, 1)",
+        "label": "Alera Green"
+      }
+    ]
+  },
+  "christmasTheme": {
+    "enabled": false
+  }
+}

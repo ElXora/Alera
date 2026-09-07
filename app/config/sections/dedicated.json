@@ -1,0 +1,404 @@
+{
+  "planTypes": [
+    {
+      "id": "ryzen-7",
+      "name": "AMD Ryzen 7",
+      "displayName": "AMD Ryzen 7",
+      "image": "/cpu/ryzen7.png"
+    },
+    {
+      "id": "ryzen-9",
+      "name": "AMD Ryzen 9",
+      "displayName": "AMD Ryzen 9",
+      "image": "/cpu/ryzen9.png"
+    },
+    {
+      "id": "intel-xeon",
+      "name": "Intel Xeon",
+      "displayName": "Intel Xeon",
+      "image": "/cpu/intel.png"
+    }
+  ],
+  "locations": [
+    {
+      "id": "central-india",
+      "name": "Central India (Pune)",
+      "flag": "/flags/india.png",
+      "displayName": "Central India (Pune)",
+      "cpu": "AMD Ryzen 9",
+      "availableCpus": [
+        "ryzen-7",
+        "ryzen-9",
+        "intel-xeon"
+      ]
+    },
+    {
+      "id": "south-india",
+      "name": "South India (Chennai)",
+      "flag": "/flags/india.png",
+      "displayName": "South India (Chennai)",
+      "cpu": "AMD Ryzen 9",
+      "availableCpus": [
+        "ryzen-7",
+        "ryzen-9",
+        "intel-xeon"
+      ]
+    },
+    {
+      "id": "west-india",
+      "name": "West India (Mumbai)",
+      "flag": "/flags/india.png",
+      "displayName": "West India (Mumbai)",
+      "cpu": "AMD Ryzen 9",
+      "availableCpus": [
+        "ryzen-7",
+        "ryzen-9",
+        "intel-xeon"
+      ]
+    },
+    {
+      "id": "germany-west-central",
+      "name": "Germany West Central (Frankfurt)",
+      "flag": "/flags/germany.png",
+      "displayName": "Germany West Central (Frankfurt)",
+      "cpu": "AMD Ryzen 9",
+      "availableCpus": [
+        "ryzen-7",
+        "ryzen-9",
+        "intel-xeon"
+      ]
+    },
+    {
+      "id": "germany-north",
+      "name": "Germany North",
+      "flag": "/flags/germany.png",
+      "displayName": "Germany North",
+      "cpu": "AMD Ryzen 9",
+      "availableCpus": [
+        "ryzen-7",
+        "ryzen-9",
+        "intel-xeon"
+      ]
+    },
+    {
+      "id": "uae-central",
+      "name": "UAE Central (Abu Dhabi)",
+      "flag": "/flags/uae.png",
+      "displayName": "UAE Central (Abu Dhabi)",
+      "cpu": "AMD Ryzen 9",
+      "availableCpus": [
+        "ryzen-7",
+        "ryzen-9",
+        "intel-xeon"
+      ]
+    },
+    {
+      "id": "qatar-central",
+      "name": "Qatar Central",
+      "flag": "/flags/qatar.svg",
+      "displayName": "Qatar Central",
+      "cpu": "AMD Ryzen 9",
+      "availableCpus": [
+        "ryzen-7",
+        "ryzen-9",
+        "intel-xeon"
+      ]
+    }
+  ],
+  "plans": {
+    "ryzen-7": [
+      {
+        "id": "VDS-R7-01",
+        "name": "VDS-R7-Basic",
+        "badge": "Popular",
+        "cpu": "4 Cores",
+        "cpuDetail": "AMD Ryzen 7",
+        "ram": "16 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "500 GB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "8615",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-R7-02",
+        "name": "VDS-R7-Standard",
+        "badge": "Best Value",
+        "cpu": "6 Cores",
+        "cpuDetail": "AMD Ryzen 7",
+        "ram": "32 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "1 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "35000",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-R7-03",
+        "name": "VDS-R7-Pro",
+        "badge": "Professional",
+        "cpu": "8 Cores",
+        "cpuDetail": "AMD Ryzen 7",
+        "ram": "64 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "2 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "135.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-R7-04",
+        "name": "VDS-R7-Enterprise",
+        "badge": "Enterprise",
+        "cpu": "16 Cores",
+        "cpuDetail": "AMD Ryzen 7",
+        "ram": "128 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "4 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "245.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      }
+    ],
+    "ryzen-9": [
+      {
+        "id": "VDS-R9-01",
+        "name": "VDS-R9-Basic",
+        "badge": "Popular",
+        "cpu": "6 Cores",
+        "cpuDetail": "AMD Ryzen 9",
+        "ram": "32 GB",
+        "ramDetail": "DDR5 RAM",
+        "storage": "1 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "£85.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-R9-02",
+        "name": "VDS-R9-Standard",
+        "badge": "Best Value",
+        "cpu": "8 Cores",
+        "cpuDetail": "AMD Ryzen 9",
+        "ram": "64 GB",
+        "ramDetail": "DDR5 RAM",
+        "storage": "2 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "£145.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-R9-03",
+        "name": "VDS-R9-Pro",
+        "badge": "Professional",
+        "cpu": "12 Cores",
+        "cpuDetail": "AMD Ryzen 9",
+        "ram": "128 GB",
+        "ramDetail": "DDR5 RAM",
+        "storage": "4 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "£225.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-R9-04",
+        "name": "VDS-R9-Enterprise",
+        "badge": "Enterprise",
+        "cpu": "16 Cores",
+        "cpuDetail": "AMD Ryzen 9",
+        "ram": "256 GB",
+        "ramDetail": "DDR5 RAM",
+        "storage": "8 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "£395.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      }
+    ],
+    "intel-xeon": [
+      {
+        "id": "VDS-IX-01",
+        "name": "VDS-IX-Basic",
+        "badge": "Popular",
+        "cpu": "4 Cores",
+        "cpuDetail": "Intel Xeon",
+        "ram": "16 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "500 GB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "£40.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-IX-02",
+        "name": "VDS-IX-Standard",
+        "badge": "Best Value",
+        "cpu": "8 Cores",
+        "cpuDetail": "Intel Xeon",
+        "ram": "32 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "1 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "£80.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-IX-03",
+        "name": "VDS-IX-Pro",
+        "badge": "Professional",
+        "cpu": "12 Cores",
+        "cpuDetail": "Intel Xeon",
+        "ram": "64 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "2 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "£150.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      },
+      {
+        "id": "VDS-IX-04",
+        "name": "VDS-IX-Enterprise",
+        "badge": "Enterprise",
+        "cpu": "16 Cores",
+        "cpuDetail": "Intel Xeon",
+        "ram": "128 GB",
+        "ramDetail": "DDR4 RAM",
+        "storage": "4 TB",
+        "storageDetail": "NVMe SSD",
+        "bandwidth": "Unlimited",
+        "bandwidthDetail": "Bandwidth",
+        "price": "£290.00",
+        "period": "/mo",
+        "features": [
+          "Full Root Access",
+          "24/7 Support",
+          "99.9% Uptime",
+          "DDoS Protection",
+          "Free Backups",
+          "Priority Support"
+        ],
+        "orderLink": "https://discord.gg/dcEvBGWtxw"
+      }
+    ]
+  }
+}

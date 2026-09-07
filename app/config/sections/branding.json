@@ -1,0 +1,13 @@
+{
+  "brandName": "Alera",
+  "brandAccent": "Hosting",
+  "fullName": "Alera Hosting",
+  "tagline": "Minecraft, Discord Bot & VPS Hosting",
+  "description": "Premium Minecraft server, Discord bot, and VPS hosting by Alera. High-performance infrastructure with 99.9% uptime, DDoS protection & 24/7 support.",
+  "logo": "/meta/alera-logo.svg",
+  "websiteUrl": "https://alera.bond",
+  "supportEmail": "",
+  "legalEmail": "",
+  "gamePanelUrl": "panel.alera.bond",
+  "discordUrl": "https://discord.gg/7wJZ7CzWjn"
+}

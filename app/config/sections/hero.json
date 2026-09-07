@@ -1,0 +1,52 @@
+{
+  "navbar": {
+    "logo": "/meta/alera-logo.svg",
+    "brandName": "Alera",
+    "brandAccent": "Hosting"
+  },
+  "hero": {
+    "title": {
+      "suffixColor": "red",
+      "gameNameColor": "green"
+    },
+    "games": [
+      {
+        "id": "minecraft",
+        "name": "Minecraft",
+        "displayName": "Minecraft",
+        "banner": "/banners/minecraft-banners.webp",
+        "color": "#55FF44",
+        "showSuffix": true,
+        "showInDropdown": true
+      }
+    ],
+    "cycleInterval": 10000,
+    "partners": [
+      {
+        "name": "Hetzner",
+        "src": "/advertisement/hetzner.png",
+        "loading": "lazy"
+      },
+      {
+        "name": "Intel",
+        "src": "/advertisement/intel.png",
+        "loading": "lazy"
+      },
+      {
+        "name": "Pterodactyl",
+        "src": "/advertisement/pterodactyl.png",
+        "loading": "lazy"
+      },
+      {
+        "name": "NeoProtect",
+        "src": "/advertisement/neoprotect.png",
+        "loading": "lazy"
+      },
+      {
+        "name": "Samsung",
+        "src": "/advertisement/samsung.png",
+        "loading": "lazy"
+      }
+    ]
+  }
+}
