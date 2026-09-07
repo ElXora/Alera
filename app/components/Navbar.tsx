@@ -738,7 +738,7 @@ const Navbar: React.FC = () => {
                   sizes="(max-width: 640px) 32px, (max-width: 768px) 40px, 48px"
                 />
                 <span className="text-base sm:text-lg md:text-xl font-bold text-gray-900 dark:text-white orbitron-font">
-                  <span className="icon-text-primary">Al</span>era
+                  <span className="text-gray-900 dark:text-white">Al</span><span className="icon-text-primary">era</span>
                 </span>
               </Link>
             </div>
