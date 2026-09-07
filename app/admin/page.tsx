@@ -308,14 +308,9 @@ export default function AdminDashboard() {
     }
   };
 
-  const brandDisplay = brandingConfig ? (
+  const brandDisplay = (
     <>
-      {brandingConfig.brandName}
-      <span className="text-blue-500">{brandingConfig.brandAccent}</span>
-    </>
-  ) : (
-    <>
-      Rim<span className="text-blue-500">Host</span>
+      Al<span className="icon-text-primary">era</span>
     </>
   );
 
@@ -367,7 +362,7 @@ export default function AdminDashboard() {
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-[#06070d] text-white flex flex-col items-center justify-center p-4">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-[#06070d] to-[#06070d] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-900/20 via-[#06070d] to-[#06070d] pointer-events-none" />
         
         <div className="relative z-10 w-full max-w-md bg-[#0d0f1a]/80 backdrop-blur-xl border border-gray-800 rounded-2xl p-8 shadow-2xl">
           <div className="text-center mb-8">
@@ -391,7 +386,7 @@ export default function AdminDashboard() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
-                  className="w-full pl-10 pr-4 py-3 bg-[#131626] border border-gray-800 rounded-lg text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
+                  className="w-full pl-10 pr-4 py-3 bg-[#131626] border border-gray-800 rounded-lg text-white focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500 transition-colors"
                 />
               </div>
             </div>
@@ -406,7 +401,7 @@ export default function AdminDashboard() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <RefreshCw className="w-5 h-5 animate-spin" />
@@ -430,7 +425,7 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-[#07080f] text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-950/20 via-[#07080f] to-[#07080f] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-950/20 via-[#07080f] to-[#07080f] pointer-events-none" />
       
       {/* Toast Alert */}
       <AnimatePresence>
@@ -458,11 +453,11 @@ export default function AdminDashboard() {
       <header className="relative z-10 border-b border-gray-800 bg-[#0c0d17]/60 backdrop-blur-md px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <h1 className="text-xl font-bold tracking-tight orbitron-font">
-            {brandDisplay} <span className="text-xs bg-blue-950 text-blue-400 px-2 py-0.5 rounded ml-2 font-mono uppercase tracking-wider">ADMIN</span>
+            {brandDisplay} <span className="text-xs bg-green-950 text-green-400 px-2 py-0.5 rounded ml-2 font-mono uppercase tracking-wider">ADMIN</span>
           </h1>
         </div>
         <div className="flex items-center gap-4">
-          {loading && <RefreshCw className="w-5 h-5 text-blue-500 animate-spin" />}
+          {loading && <RefreshCw className="w-5 h-5 text-green-500 animate-spin" />}
           <button
             onClick={handleLogout}
             className="flex items-center gap-2 text-sm text-gray-400 hover:text-white px-3 py-1.5 rounded-lg border border-gray-800 hover:border-gray-700 bg-gray-900/40 transition-colors"
@@ -496,7 +491,7 @@ export default function AdminDashboard() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`w-full text-left flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all ${
                   isSelected
-                    ? "bg-blue-600 text-white shadow-lg shadow-blue-950/20"
+                    ? "bg-green-600 text-white shadow-lg shadow-green-950/20"
                     : "text-gray-400 hover:text-white hover:bg-gray-900/60"
                 }`}
               >
@@ -529,7 +524,7 @@ export default function AdminDashboard() {
                     type="text"
                     value={brandingConfig.brandName}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, brandName: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -541,7 +536,7 @@ export default function AdminDashboard() {
                     type="text"
                     value={brandingConfig.brandAccent}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, brandAccent: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -553,7 +548,7 @@ export default function AdminDashboard() {
                     type="text"
                     value={brandingConfig.fullName}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, fullName: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -565,7 +560,7 @@ export default function AdminDashboard() {
                     type="text"
                     value={brandingConfig.tagline}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, tagline: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -577,7 +572,7 @@ export default function AdminDashboard() {
                     value={brandingConfig.description}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, description: e.target.value })}
                     rows={3}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -589,7 +584,7 @@ export default function AdminDashboard() {
                     type="text"
                     value={brandingConfig.logo}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, logo: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -601,7 +596,7 @@ export default function AdminDashboard() {
                     type="text"
                     value={brandingConfig.websiteUrl}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, websiteUrl: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -613,7 +608,7 @@ export default function AdminDashboard() {
                     type="email"
                     value={brandingConfig.supportEmail}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, supportEmail: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -625,7 +620,7 @@ export default function AdminDashboard() {
                     type="email"
                     value={brandingConfig.legalEmail}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, legalEmail: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -637,7 +632,7 @@ export default function AdminDashboard() {
                     type="text"
                     value={brandingConfig.gamePanelUrl}
                     onChange={(e) => setBrandingConfig({ ...brandingConfig, gamePanelUrl: e.target.value })}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -653,7 +648,7 @@ export default function AdminDashboard() {
                     />
                     <span className="text-2xl font-bold orbitron-font">
                       {brandingConfig.brandName}
-                      <span className="text-blue-500">{brandingConfig.brandAccent}</span>
+                      <span className="icon-text-primary">{brandingConfig.brandAccent}</span>
                     </span>
                   </div>
                   <p className="text-gray-400 text-sm mt-3">{brandingConfig.fullName} — {brandingConfig.tagline}</p>
@@ -663,7 +658,7 @@ export default function AdminDashboard() {
               <div className="flex justify-end border-t border-gray-800 pt-6">
                 <button
                   onClick={saveBranding}
-                  className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2"
+                  className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2"
                 >
                   <Save className="w-5 h-5" />
                   <span>Save Branding</span>
@@ -715,7 +710,7 @@ export default function AdminDashboard() {
                     }}
                     className={`px-4 py-2 rounded-lg font-bold transition-colors ${
                       navigationConfig.banner.useThemeColor
-                        ? "bg-blue-600 hover:bg-blue-700 text-white"
+                        ? "bg-green-600 hover:bg-green-700 text-white"
                         : "bg-gray-800 hover:bg-gray-700 text-gray-300"
                     }`}
                   >
@@ -736,7 +731,7 @@ export default function AdminDashboard() {
                         banner: { ...navigationConfig.banner, text: e.target.value }
                       });
                     }}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500"
                   />
                 </div>
 
@@ -753,7 +748,7 @@ export default function AdminDashboard() {
                         banner: { ...navigationConfig.banner, couponCode: e.target.value }
                       });
                     }}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500 font-mono"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500 font-mono"
                   />
                 </div>
 
@@ -771,7 +766,7 @@ export default function AdminDashboard() {
                         banner: { ...navigationConfig.banner, backgroundColor: e.target.value }
                       });
                     }}
-                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-[#131626] border border-gray-800 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-green-500 disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                 </div>
               </div>
@@ -779,7 +774,7 @@ export default function AdminDashboard() {
               <div className="flex justify-end border-t border-gray-800 pt-6">
                 <button
                   onClick={() => saveConfig("navigation", navigationConfig)}
-                  className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2"
+                  className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2"
                 >
                   <Save className="w-5 h-5" />
                   <span>Save Banner Configuration</span>
@@ -843,7 +838,7 @@ export default function AdminDashboard() {
                             setPricingConfig(updated);
                           }}
                           placeholder="9.99 or $75"
-                          className="w-full bg-[#1c1f36] border border-gray-700 rounded px-3 py-2 text-white text-sm focus:outline-none focus:border-blue-500"
+                          className="w-full bg-[#1c1f36] border border-gray-700 rounded px-3 py-2 text-white text-sm focus:outline-none focus:border-green-500"
                         />
                       </div>
                     </div>
@@ -854,7 +849,7 @@ export default function AdminDashboard() {
               <div className="flex justify-end border-t border-gray-800 pt-6">
                 <button
                   onClick={() => saveConfig("pricing", pricingConfig)}
-                  className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2"
+                  className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2"
                 >
                   <Save className="w-5 h-5" />
                   <span>Save Homepage Pricing</span>
@@ -897,7 +892,7 @@ export default function AdminDashboard() {
               </div>
 
               <div className="border-t border-gray-800 pt-6">
-                <div className="flex items-center gap-2 mb-4 bg-blue-950/20 border border-blue-800/20 p-3 rounded-lg text-blue-400 text-sm">
+                <div className="flex items-center gap-2 mb-4 bg-green-950/20 border border-green-800/20 p-3 rounded-lg text-green-400 text-sm">
                   <Cpu className="w-5 h-5 flex-shrink-0" />
                   <span>
                     Editing plans for <strong>{selectedGame?.name}</strong> using <strong>{gamesConfig.planTypes.find((p:any)=>p.id===selectedGameCpu)?.name}</strong> CPU.
@@ -1011,7 +1006,7 @@ export default function AdminDashboard() {
                     });
                     setGamesConfig(updated);
                   }}
-                  className="mt-4 flex items-center gap-2 text-sm text-blue-400 hover:text-white px-3 py-1.5 rounded border border-blue-900 bg-blue-950/20"
+                  className="mt-4 flex items-center gap-2 text-sm text-green-400 hover:text-white px-3 py-1.5 rounded border border-green-900 bg-green-950/20"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Add New memory Slab</span>
@@ -1046,7 +1041,7 @@ export default function AdminDashboard() {
               <div className="flex justify-end border-t border-gray-800 pt-6">
                 <button
                   onClick={() => saveConfig("games", gamesConfig)}
-                  className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2"
+                  className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2"
                 >
                   <Save className="w-5 h-5" />
                   <span>Save Game Pricing</span>
@@ -1187,7 +1182,7 @@ export default function AdminDashboard() {
                     });
                     setVpsConfig(updated);
                   }}
-                  className="mt-4 flex items-center gap-2 text-sm text-blue-400 hover:text-white px-3 py-1.5 rounded border border-blue-900 bg-blue-950/20"
+                  className="mt-4 flex items-center gap-2 text-sm text-green-400 hover:text-white px-3 py-1.5 rounded border border-green-900 bg-green-950/20"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Add VPS Configuration</span>
@@ -1197,7 +1192,7 @@ export default function AdminDashboard() {
               <div className="flex justify-end border-t border-gray-800 pt-6">
                 <button
                   onClick={() => saveConfig("vps", vpsConfig)}
-                  className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2"
+                  className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2"
                 >
                   <Save className="w-5 h-5" />
                   <span>Save VPS Config</span>
@@ -1340,7 +1335,7 @@ export default function AdminDashboard() {
                     });
                     setDedicatedConfig(updated);
                   }}
-                  className="mt-4 flex items-center gap-2 text-sm text-blue-400 hover:text-white px-3 py-1.5 rounded border border-blue-900 bg-blue-950/20"
+                  className="mt-4 flex items-center gap-2 text-sm text-green-400 hover:text-white px-3 py-1.5 rounded border border-green-900 bg-green-950/20"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Add Dedicated Server Plan</span>
@@ -1350,7 +1345,7 @@ export default function AdminDashboard() {
               <div className="flex justify-end border-t border-gray-800 pt-6">
                 <button
                   onClick={() => saveConfig("dedicated", dedicatedConfig)}
-                  className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2"
+                  className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2"
                 >
                   <Save className="w-5 h-5" />
                   <span>Save Dedicated Config</span>
@@ -1493,7 +1488,7 @@ export default function AdminDashboard() {
                     });
                     setDiscordConfig(updated);
                   }}
-                  className="mt-4 flex items-center gap-2 text-sm text-blue-400 hover:text-white px-3 py-1.5 rounded border border-blue-900 bg-blue-950/20"
+                  className="mt-4 flex items-center gap-2 text-sm text-green-400 hover:text-white px-3 py-1.5 rounded border border-green-900 bg-green-950/20"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Add Discord Plan</span>
@@ -1503,7 +1498,7 @@ export default function AdminDashboard() {
               <div className="flex justify-end border-t border-gray-800 pt-6">
                 <button
                   onClick={() => saveConfig("discord", discordConfig)}
-                  className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2"
+                  className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2"
                 >
                   <Save className="w-5 h-5" />
                   <span>Save Discord Config</span>
@@ -1646,7 +1641,7 @@ export default function AdminDashboard() {
                     });
                     setWebhostingConfig(updated);
                   }}
-                  className="mt-4 flex items-center gap-2 text-sm text-blue-400 hover:text-white px-3 py-1.5 rounded border border-blue-900 bg-blue-950/20"
+                  className="mt-4 flex items-center gap-2 text-sm text-green-400 hover:text-white px-3 py-1.5 rounded border border-green-900 bg-green-950/20"
                 >
                   <Plus className="w-4 h-4" />
                   <span>Add Web Plan</span>
@@ -1656,7 +1651,7 @@ export default function AdminDashboard() {
               <div className="flex justify-end border-t border-gray-800 pt-6">
                 <button
                   onClick={() => saveConfig("webhosting", webhostingConfig)}
-                  className="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2"
+                  className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2"
                 >
                   <Save className="w-5 h-5" />
                   <span>Save Web Config</span>
@@ -1692,7 +1687,7 @@ export default function AdminDashboard() {
                   value={rawJson}
                   onChange={(e) => setRawJson(e.target.value)}
                   rows={20}
-                  className="w-full bg-[#0a0b12] border border-gray-800 rounded-lg p-4 font-mono text-xs text-green-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full bg-[#0a0b12] border border-gray-800 rounded-lg p-4 font-mono text-xs text-green-400 focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500"
                 />
 
                 {jsonError && (
@@ -1742,7 +1737,7 @@ export default function AdminDashboard() {
                           setJsonError(`Invalid JSON: ${e.message}`);
                         }
                       }}
-                      className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg flex items-center gap-2 text-sm"
+                      className="px-6 py-2 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg flex items-center gap-2 text-sm"
                     >
                       <Save className="w-4 h-4" />
                       <span>Write to Disk</span>
@@ -1756,4 +1751,4 @@ export default function AdminDashboard() {
       </div>
     </div>
   );
-}
+                }
