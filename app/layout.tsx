@@ -69,7 +69,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: {
-      default: `${branding.fullName} - ${branding.tagline}`,
+      default: "Alera | Host Smarter",
       template: `%s | ${branding.fullName}`
     },
     description: branding.description,
